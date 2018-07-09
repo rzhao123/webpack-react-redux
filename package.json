@@ -1,0 +1,40 @@
+{
+  "name": "webpack-react-redux",
+  "version": "1.0.0",
+  "description": "webpack react redux",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --config webpack.dev.js --host 0.0.0.0 --public react-redux.yooya.com --watch-poll",
+    "build": "webpack --config webpack.prod.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rzhao123/webpack-react-redux.git"
+  },
+  "author": "robin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rzhao123/webpack-react-redux/issues"
+  },
+  "homepage": "https://github.com/rzhao123/webpack-react-redux#readme",
+  "dependencies": {
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "webpack": "^4.15.1",
+    "webpack-cli": "^3.0.8",
+    "webpack-dev-server": "^3.1.4"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "clean-webpack-plugin": "^0.1.19",
+    "css-loader": "^0.28.11",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^0.21.0",
+    "uglifyjs-webpack-plugin": "^1.2.7",
+    "webpack-merge": "^4.1.3"
+  }
+}
