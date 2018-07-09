@@ -1,11 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
-let environment = process.env.NODE_ENV;
-
-console.log(environment);
+import { Provider } from 'react-redux'
+import { createStore } from 'redux'
+import todoApp from '../reducers/reducer'
+import App from '../components/App'
+let store = createStore(todoApp)
 
 ReactDOM.render(
-  <h1>Hello React!</h1>,
-  document.getElementById('main')
+    <Provider store={store}>
+        <App />
+    </Provider>,
+    document.getElementById('main')
 );
