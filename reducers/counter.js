@@ -1,6 +1,3 @@
-import { combineReducers } from 'redux'
-// import { INCREASE, DECREASE } from '../actions/counter'
-
 export default function counter(state = {count: 0}, action) {
     const count = state.count
     switch (action.type) {
